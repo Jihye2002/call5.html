@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>피그마 스타일 기본 전화 링크</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center; /* 가로 중앙 */
+            align-items: center;     /* 세로 중앙 */
+            background-color: #f0f2f5; /* 깔끔한 배경 */
+        }
+
+        .call-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #1a1a1a; /* 진한 회색 */
+            font-size: 20px;
+        }
+
+        .call-link img {
+            width: 28px;
+            height: 28px;
+            margin-right: 10px;
+        }
+
+        @media (max-width: 480px) {
+            .call-link {
+                font-size: 18px;
+            }
+
+            .call-link img {
+                width: 24px;
+                height: 24px;
+                margin-right: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="tel:0269161500" class="call-link">
+        <img src="https://i.imgur.com/TifDSAu.png" alt="전화 아이콘">
+        02-6916-1500
+    </a>
+
+</body>
+</html>
